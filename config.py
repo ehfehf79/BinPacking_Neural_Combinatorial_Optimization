@@ -50,9 +50,9 @@ misc_arg.add_argument('--train_mode', type=str2bool, default=False, help='switch
 misc_arg.add_argument('--save_model', type=str2bool, default=False, help='whether or not model is loaded')
 misc_arg.add_argument('--load_model', type=str2bool, default=False, help='whether or not model is retrieved')
 
-misc_arg.add_argument('--save_to', type=str, default='save/model', help='saver sub directory')
-misc_arg.add_argument('--load_from', type=str, default='save/model', help='loader sub directory')
-misc_arg.add_argument('--log_dir', type=str, default='summary/repo', help='summary writer log directory')
+misc_arg.add_argument('--save_to', type=str, default='BinPacking_Neural_Combinatorial_Optimization/save/model', help='saver sub directory')
+misc_arg.add_argument('--load_from', type=str, default='BinPacking_Neural_Combinatorial_Optimization/save/model', help='loader sub directory')
+misc_arg.add_argument('--log_dir', type=str, default='BinPacking_Neural_Combinatorial_Optimization/summary/repo', help='summary writer log directory')
 
 
 def get_config():

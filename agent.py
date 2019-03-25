@@ -57,7 +57,7 @@ class DynamicMultiRNN(object):
     """
 
     def __init__(self, action_size, batch_size, input_, input_len_, num_activations, num_layers):
-
+        #              num_bin 5  , 128       , 
         self.action_size = action_size
         self.batch_size = batch_size
         self.num_activations = num_activations
@@ -113,7 +113,7 @@ class DynamicMultiRNN(object):
 
 class Agent:
     def __init__(self, state_size_embeddings, state_maxServiceLength, action_size, batch_size, learning_rate, hidden_dim,  num_stacks):
-
+        #              number of packet 8   , maximum serv len 6    , num bins 5 , 128
         # Training config (agent)
         self.learning_rate = learning_rate
         #self.global_step = tf.Variable(0, trainable=False, name="global_step")  # global step
@@ -155,12 +155,12 @@ class Agent:
             opt = tf.train.AdamOptimizer(learning_rate=self.learning_rate, beta1=0.9, beta2=0.99, epsilon=0.0000001)
 
             # Multinomial distribution
-            probs = tf.contrib.distributions.Categorical(probs=self.ptr.outputs)
+            probs = tf.contrib.distributions.Categorical(probs=self.ptr.outputs) #duplicated
             log_softmax = probs.log_prob(self.positions_holder)         # [Batch, seq_length]
             #log_softmax = tf.Print(log_softmax, ["log_softmax", log_softmax, tf.shape(log_softmax)])
 
 
-            log_softmax_mean = tf.reduce_sum(log_softmax,1)                  # [Batch]
+            log_softmax_mean = tf.reduce_sum(log_softmax,1) #seq length diff, sum?? mean?                  # [Batch]
             #log_softmax_mean = tf.Print(log_softmax_mean, ["log_softmax_mean",log_softmax_mean, tf.shape(log_softmax_mean)])
             variable_summaries('log_softmax_mean', log_softmax_mean, with_max_min=True)
 
