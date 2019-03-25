@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 import pymzn
 
-pymzn.debug(False)
+#pymzn.debug(False)
 
 """
 PyMzn is a Python library that wraps the MiniZinc tools for constraint programming. PyMzn is built on top 
@@ -33,7 +33,7 @@ def solver(service, length, env):
 
     weights = [env.service_properties[i]['size'] for i in range(env.numDescriptors)]
 
-    s = pymzn.minizinc('BinPacking_Neural_Combinatorial_Optimization/placement.mzn', fzn_flags=['--version 2.1.1'], solver='gecode', timeout=30, parallel=4, data={'numBins': env.numBins,
+    s = pymzn.minizinc('BinPacking_Neural_Combinatorial_Optimization/placement.mzn', solver='gecode', timeout=30, parallel=4, data={'numBins': env.numBins,
                                                                         'numSlots': env.numSlots,
                                                                         'chainLen': length,
                                                                         'chain': chain,
