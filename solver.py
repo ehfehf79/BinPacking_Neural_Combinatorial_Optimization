@@ -2,7 +2,7 @@
 import pymzn
 
 pymzn.debug(False)
-pymzn.config.set('minizinc', '/usr/local/lib/python3.6/dist-packages')
+pymzn.config('minizinc', '/usr/local/lib/python3.6/dist-packages')
 """
 PyMzn is a Python library that wraps the MiniZinc tools for constraint programming. PyMzn is built on top 
 of the minizinc and enables to parse the solutions into Python objects. Author: Paolo Dragone, PhD student at the 
