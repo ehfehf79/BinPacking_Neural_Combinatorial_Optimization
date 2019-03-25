@@ -72,7 +72,7 @@ if __name__ == "__main__":
 
         # Restore variables from disk
         if config.load_model:
-            saver.restore(sess, config.load_model)
+            saver.restore(sess, config.load_from)
             print("Model restored.")
 
         # Train model
