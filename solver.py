@@ -33,7 +33,7 @@ def solver(service, length, env):
 
     weights = [env.service_properties[i]['size'] for i in range(env.numDescriptors)]
 
-    s = pymzn.minizinc('BinPacking_Neural_Combinatorial_Optimization/placement.mzn', solver='gecode', timeout=30, parallel=4, data={'numBins': env.numBins,
+    s = pymzn.minizinc('placement.mzn', solver='gecode', timeout=30, parallel=4, data={'numBins': env.numBins,
                                                                         'numSlots': env.numSlots,
                                                                         'chainLen': length,
                                                                         'chain': chain,
