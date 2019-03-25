@@ -50,8 +50,8 @@ misc_arg.add_argument('--train_mode', type=str2bool, default=False, help='switch
 misc_arg.add_argument('--save_model', type=str2bool, default=False, help='whether or not model is loaded')
 misc_arg.add_argument('--load_model', type=str2bool, default=False, help='whether or not model is retrieved')
 
-misc_arg.add_argument('--save_to', type=str, default='BinPacking_Neural_Combinatorial_Optimization/save', help='saver sub directory')
-misc_arg.add_argument('--load_from', type=str, default='BinPacking_Neural_Combinatorial_Optimization/save', help='loader sub directory')
+misc_arg.add_argument('--save_to', type=str, default='BinPacking_Neural_Combinatorial_Optimization/save/tf_binpacking.ckpt', help='saver sub directory')
+misc_arg.add_argument('--load_from', type=str, default='BinPacking_Neural_Combinatorial_Optimization/save/tf_binpacking.ckpt', help='loader sub directory')
 misc_arg.add_argument('--log_dir', type=str, default='BinPacking_Neural_Combinatorial_Optimization/summary/repo', help='summary writer log directory')
 
 
