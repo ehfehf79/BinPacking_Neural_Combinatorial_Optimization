@@ -147,7 +147,8 @@ if __name__ == "__main__":
                 reward[batch] = env.reward
 
                 # Render some batch services
-                if batch % max(1, int(config.batch_size / 5)) == 0:
+                #if batch % max(1, int(config.batch_size / 5)) == 0:
+                if batch == config.batch_size -1:
                     print("\n Rendering batch ", batch, "...")
                     env.render(batch)
 
