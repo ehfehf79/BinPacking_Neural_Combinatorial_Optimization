@@ -137,8 +137,9 @@ class Environment(object):
 
         #margin = 3
         margin = 0
-        #margin_ext = 6
-        margin_ext = 0
+        margin_ext = 6
+        
+        #margin_ext = 0
         xlim = 100
         ylim = 80
 
