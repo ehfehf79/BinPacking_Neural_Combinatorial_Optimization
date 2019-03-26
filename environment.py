@@ -1,4 +1,4 @@
-#-*- coding: utf-8 -*-
+%matplotlib inline
 
 import numpy as np
 import math
