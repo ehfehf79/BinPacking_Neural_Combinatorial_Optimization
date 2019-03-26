@@ -5,8 +5,6 @@
     Author: Ruben Solozabal, PhD student at the University of the Basque Country [UPV-EHU] Bilbao
     Date: October 2018
 """
-%matplotlib inline
-
 import logging
 import tensorflow as tf
 from environment import *
