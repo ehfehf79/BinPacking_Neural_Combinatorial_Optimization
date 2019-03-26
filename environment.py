@@ -1,4 +1,3 @@
-%matplotlib notebook
 #-*- coding: utf-8 -*-
 
 import numpy as np
@@ -186,7 +185,7 @@ class Environment(object):
 
 
         plt.axis('off')
-        plt.show()
+        plt.show();
 
 
 if __name__ == "__main__":
