@@ -135,7 +135,8 @@ class Environment(object):
         fig, ax = plt.subplots()
         ax.set_title(f'Environment {epoch}\nreward: {self.reward}')
 
-        margin = 3
+        #margin = 3
+        margin = 0
         margin_ext = 6
         xlim = 100
         ylim = 80

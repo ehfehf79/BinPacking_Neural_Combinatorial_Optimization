@@ -14,7 +14,7 @@ from config import *
 from solver import *
 from tensorflow.python import debug as tf_debug
 from tqdm import tqdm
-from IPython.display import Image
+
 
 """ Globals """
 DEBUG = True
@@ -152,7 +152,7 @@ if __name__ == "__main__":
                     print("\n Rendering batch ", batch, "...")
                     env.render(batch)
 
-            Image('figure_0.png')
+  
 
             # Calculate performance
             if config.enable_performance:
