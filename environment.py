@@ -184,7 +184,7 @@ class Environment(object):
 
 
         plt.axis('off')
-        plt.show()
+        #plt.show()
         fig.savefig('figure_{}.png'.format(epoch))
 
 
