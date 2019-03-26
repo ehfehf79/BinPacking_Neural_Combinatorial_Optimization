@@ -1,5 +1,4 @@
-%matplotlib inline
-
+#-*- coding: utf-8 -*-
 import numpy as np
 import math
 import matplotlib.pyplot as plt
@@ -185,7 +184,7 @@ class Environment(object):
 
 
         plt.axis('off')
-        plt.show();
+        plt.show()
 
 
 if __name__ == "__main__":
