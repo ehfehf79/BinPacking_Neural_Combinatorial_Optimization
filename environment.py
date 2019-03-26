@@ -1,5 +1,6 @@
-#-*- coding: utf-8 -*-
 %matplotlib notebook
+#-*- coding: utf-8 -*-
+
 import numpy as np
 import math
 import matplotlib.pyplot as plt
