@@ -5,6 +5,8 @@
     Author: Ruben Solozabal, PhD student at the University of the Basque Country [UPV-EHU] Bilbao
     Date: October 2018
 """
+%matplotlib inline
+
 import logging
 import tensorflow as tf
 from environment import *
@@ -147,8 +149,7 @@ if __name__ == "__main__":
                 reward[batch] = env.reward
 
                 # Render some batch services
-                #if batch % max(1, int(config.batch_size / 5)) == 0:
-                if batch == config.batch_size -1:
+                if batch % max(1, int(config.batch_size / 5)) == 0:
                     print("\n Rendering batch ", batch, "...")
                     env.render(batch)
 
