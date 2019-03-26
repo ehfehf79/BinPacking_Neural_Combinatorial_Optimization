@@ -151,7 +151,8 @@ if __name__ == "__main__":
                 if batch % max(1, int(config.batch_size / 5)) == 0:
                     print("\n Rendering batch ", batch, "...")
                     env.render(batch)
-                    Image('figure_{}.png'.format(batch))
+
+            Image('figure_0.png')
 
             # Calculate performance
             if config.enable_performance:
