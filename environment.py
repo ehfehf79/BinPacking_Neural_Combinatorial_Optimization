@@ -185,6 +185,7 @@ class Environment(object):
 
         plt.axis('off')
         plt.show()
+        fig.savefig('figure_{}.png'.format(epoch))
 
 
 if __name__ == "__main__":
