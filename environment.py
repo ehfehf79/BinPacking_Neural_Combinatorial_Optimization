@@ -1,4 +1,5 @@
 #-*- coding: utf-8 -*-
+%matplotlib notebook
 import numpy as np
 import math
 import matplotlib.pyplot as plt
